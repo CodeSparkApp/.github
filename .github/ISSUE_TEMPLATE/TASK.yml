@@ -1,7 +1,5 @@
 name: Task
 description: Creating a new task
-labels:
-- enhancement
 projects:
   - CodeSparkApp/1
 body:
@@ -14,22 +12,17 @@ body:
     label: Task Description
     description: "Provide a detailed description of the task."
     placeholder: "As a ... I need ... so that I ..."
-    render: markdown
   validations:
     required: true
 
-- type: textarea
+- type: markdown
   attributes:
-    label: Acceptance Criteria
-    description: "What are the acceptance criteria for this task?"
-    placeholder: "List the conditions that must be met for the task to be considered complete."
-    render: markdown
-  validations:
-    required: true
+    value: |
+      ## Acceptance Criteria
+      - [ ] Criteria 1
+      - [ ] Criteria 2
 
 - type: textarea
   attributes:
     label: Additional Information
     description: "Any other details to help complete the task"
-    placeholder: "..."
-    render: markdown
