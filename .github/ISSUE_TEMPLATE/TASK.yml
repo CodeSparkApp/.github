@@ -1,6 +1,5 @@
 name: Task
 description: Creating a new task
-labels:
 projects:
   - CodeSparkApp/1
 body:
