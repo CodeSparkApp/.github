@@ -1,5 +1,6 @@
 name: Task
 description: Creating a new task
+labels:
 projects:
   - CodeSparkApp/1
 body:
@@ -15,12 +16,13 @@ body:
   validations:
     required: true
 
-- type: markdown
+- type: textarea
   attributes:
-    value: |
-      ## Acceptance Criteria
-        - [ ] Criteria 1
-        - [ ] Criteria 2
+    label: Acceptance Criteria
+    description: "What are the acceptance criteria for this task?"
+    placeholder: "List the conditions that must be met for the task to be considered complete."
+  validations:
+    required: true
 
 - type: textarea
   attributes:
